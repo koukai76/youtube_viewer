@@ -38,8 +38,8 @@ const v = url.searchParams.get('v');
 console.log(window.location.href);
 console.log(v);
 
-if (v == null) {
-  return;
-}
+// if (v == null) {
+//   return;
+// }
 
-document.getElementById(MOVIE).src = `https://www.youtube.com/embed/${v}`;
+// document.getElementById(MOVIE).src = `https://www.youtube.com/embed/${v}`;
