@@ -33,7 +33,7 @@ document.getElementById('input').addEventListener('keydown', e => {
 const url = new URL(window.location.href);
 const v = url.searchParams.get('v');
 
-document.getElementById(MOVIE).src = `https://www.youtube.com/embed/${v}?autoplay=1`;
+document.getElementById(MOVIE).src = `https://www.youtube.com/embed/${v}`;
 
 main();
 
