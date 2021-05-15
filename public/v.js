@@ -18,7 +18,8 @@ const main = () => {
   if (v == null) {
     return;
   }
-
+  
+  console.log(v);
   document.getElementById(MOVIE).src = `https://www.youtube.com/embed/${v}`;
 };
 
