@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youtube</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background: #f7f7f7;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin: 0 auto; max-width: 768px">
+      <div class="form-group">
+        <label for="">URL</label>
+        <input
+          type="text"
+          class="form-control"
+          id="input"
+          placeholder="動画のURL"
+        />
+      </div>
+
+      <br />
+
+      <iframe
+        src="https://www.youtube.com/embed/bYzH7po55K4"
+        frameborder="0"
+        id="movie"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
