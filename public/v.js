@@ -15,11 +15,13 @@ const main = () => {
   const url = new URL(window.location.href);
   const v = url.searchParams.get('v');
 
+  console.log(window.location.href);
+  console.log(v);
+  
   if (v == null) {
     return;
   }
   
-  console.log(v);
   document.getElementById(MOVIE).src = `https://www.youtube.com/embed/${v}`;
 };
 
