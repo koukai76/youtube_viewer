@@ -11,12 +11,6 @@ const main = () => {
 
   document.getElementById(MOVIE).style.width = w + 'px';
   document.getElementById(MOVIE).style.height = w * 0.5625 + 'px';
-  
-  const url = new URL(window.location.href);
-  const v = url.searchParams.get('v');
-
-  document.getElementById(MOVIE).src = `https://www.youtube.com/embed/${v}`;
-  
 };
 
 document.getElementById('input').addEventListener('keydown', e => {
@@ -36,4 +30,10 @@ document.getElementById('input').addEventListener('keydown', e => {
   }
 });
 
+const url = new URL(window.location.href);
+const v = url.searchParams.get('v');
+
+document.getElementById(MOVIE).src = `https://www.youtube.com/embed/${v}`;
+
 main();
+
