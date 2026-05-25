@@ -8,18 +8,33 @@
 
     <style>
       body {
-        background: #f7f7f7;
         margin: 0;
+        background: #f7f7f7;
+
+        /* 上下左右中央 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* 画面いっぱい */
+        min-height: 100vh;
+
+        /* 余白 */
+        padding: 20px;
+
+        box-sizing: border-box;
       }
 
       .movie-wrap {
-        max-width: 768px;
-        margin: 0 auto; /* 中央寄せ */
+        width: 100%;
+        max-width: 1200px; /* 横に広げる */
       }
 
       #movie {
         width: 100%;
         aspect-ratio: 16 / 9;
+        border: none;
+        display: block;
       }
     </style>
   </head>
@@ -27,9 +42,8 @@
   <body>
     <div class="movie-wrap">
       <iframe
-        src="https://www.youtube.com/embed/bYzH7po55K4"
-        frameborder="0"
         id="movie"
+        src="https://www.youtube.com/embed/bYzH7po55K4"
         allowfullscreen
       ></iframe>
     </div>
