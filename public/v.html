@@ -5,22 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>youtube</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
 
     <style>
       body {
         background: #f7f7f7;
         margin: 0;
       }
+
+      .movie-wrap {
+        max-width: 768px;
+        margin: 0 auto; /* 中央寄せ */
+      }
+
+      #movie {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
     </style>
   </head>
+
   <body>
-    <div style="max-width: 768px">
+    <div class="movie-wrap">
       <iframe
         src="https://www.youtube.com/embed/bYzH7po55K4"
         frameborder="0"
